@@ -1,0 +1,134 @@
+/* Chez Marielle — colours and fonts carried over from the Canva site */
+:root {
+  --green: #03301A;
+  --cream: #F5F1E8;
+  --ink: #274234;
+  --white: #FFFFFF;
+  --line: rgba(3, 48, 26, 0.18);
+  --serif: 'Ovo', Georgia, 'Times New Roman', serif;
+  --sans: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --gutter: clamp(20px, 5vw, 64px);
+  --section: clamp(56px, 7vw, 96px);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; height: auto; }
+figure { margin: 0; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 400; color: var(--green); margin: 0; }
+h2 { font-size: 26px; line-height: 1.2; margin-bottom: 24px; }
+h3 { font-size: 20px; line-height: 1.3; margin-bottom: 10px; }
+p { margin: 0; }
+a { color: inherit; }
+
+.wrap { max-width: 1160px; margin: 0 auto; padding: 0 var(--gutter); }
+
+/* Buttons */
+.button {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  background: var(--cream);
+  color: var(--green);
+  border: 0;
+  padding: 14px 26px;
+  cursor: pointer;
+}
+.button.dark { background: var(--green); color: var(--white); }
+.button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid #8A7652; outline-offset: 2px; }
+
+/* Hero */
+.hero { background: var(--green); color: var(--cream); padding: 36px 0 var(--section); }
+.logo img { width: 230px; }
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(32px, 6vw, 88px);
+  align-items: center;
+  margin-top: clamp(32px, 5vw, 56px);
+}
+.hero h1 { color: var(--white); font-size: clamp(38px, 5vw, 56px); line-height: 1.13; }
+.hero-line { margin-top: 20px; }
+.event-types { margin: 22px 0 32px; padding-left: 20px; }
+.event-types li { margin: 4px 0; }
+.hero-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 40%; }
+
+/* What I do / Who it's for / What I can help with */
+.services { padding: var(--section) 0; }
+.cols { display: grid; gap: 40px; }
+.cols.three { grid-template-columns: repeat(3, 1fr); }
+.cols article { border-top: 1px solid var(--line); padding-top: 20px; }
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: clamp(48px, 6vw, 72px);
+}
+.tags, .help-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.tags li, .help-list li { padding: 12px 0; border-bottom: 1px solid var(--line); }
+
+/* About */
+.about { background: var(--cream); padding: var(--section) 0; }
+.about-grid { display: grid; grid-template-columns: 320px 1fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
+.about-photo img { width: 100%; }
+.about p { max-width: 560px; }
+
+/* Plan an event */
+.contact { padding: var(--section) 0; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(32px, 6vw, 80px); align-items: start; }
+.contact-intro p { max-width: 380px; }
+.links { list-style: none; padding: 0; margin: 28px 0 0; }
+.links li { margin: 8px 0; }
+.links a { color: var(--green); font-weight: 500; text-underline-offset: 4px; }
+
+.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 20px; }
+.field { grid-column: 1 / -1; display: flex; flex-direction: column; }
+.field.half { grid-column: span 1; }
+label { font-size: 15px; color: var(--green); margin-bottom: 6px; }
+input, textarea {
+  font: inherit;
+  font-size: 16px;
+  color: var(--ink);
+  border: 1px solid rgba(39, 66, 52, 0.35);
+  border-radius: 0;
+  padding: 12px 14px;
+  background: var(--white);
+  width: 100%;
+}
+textarea { resize: vertical; }
+.honeypot { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.field .button { align-self: flex-start; }
+.form-status { margin-top: 14px; min-height: 1.6em; }
+
+/* Footer */
+.footer { border-top: 1px solid var(--line); padding: 28px 0; font-size: 14px; }
+
+/* Tablet */
+@media (max-width: 900px) {
+  .cols.three { grid-template-columns: 1fr; gap: 28px; }
+  .split { grid-template-columns: 1fr; gap: 48px; }
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+/* Phone */
+@media (max-width: 700px) {
+  .hero { padding-top: 24px; }
+  .logo img { width: 180px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 32px; margin-top: 28px; }
+  .hero-photo img { aspect-ratio: 4 / 5; }
+  .about-grid { grid-template-columns: 1fr; }
+  .about-photo { max-width: 300px; }
+  .inquiry { grid-template-columns: 1fr; }
+  .field.half { grid-column: 1 / -1; }
+}

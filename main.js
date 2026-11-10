@@ -1,0 +1,47 @@
+// Inquiry form: sends each submission to marielle@chezmarielle.com through Web3Forms.
+(function () {
+  var form = document.getElementById('inquiry');
+  if (!form) return;
+  var status = form.querySelector('.form-status');
+  var button = form.querySelector('button[type="submit"]');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+    var data = Object.fromEntries(new FormData(form).entries());
+    if (data.botcheck) return;
+    delete data.botcheck;
+    data.access_key = '2e7e68f5-13fb-44a7-ab45-3b33eaceabe3';
+    data.subject = 'New inquiry from chezmarielle.com';
+    data.from_name = 'Chez Marielle website';
+
+    button.disabled = true;
+    button.textContent = 'Sending...';
+    status.textContent = '';
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data)
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (res) {
+        if (res && res.success) {
+          form.reset();
+          status.textContent = 'Thank you! Your inquiry has been sent.';
+        } else {
+          throw new Error('not sent');
+        }
+      })
+      .catch(function () {
+        status.textContent = 'Something went wrong. Please email hello@chezmarielle.com.';
+      })
+      .finally(function () {
+        button.disabled = false;
+        button.textContent = 'Send';
+      });
+  });
+})();
