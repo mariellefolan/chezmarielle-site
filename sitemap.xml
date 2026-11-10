@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://chezmarielle.com/</loc>
     <lastmod>2026-11-09</lastmod>
+    <image:image><image:loc>https://chezmarielle.com/images/hero-table.jpg</image:loc></image:image>
+    <image:image><image:loc>https://chezmarielle.com/images/the-blind-table.jpg</image:loc></image:image>
+    <image:image><image:loc>https://chezmarielle.com/images/good-wine-better-chemistry.jpg</image:loc></image:image>
+    <image:image><image:loc>https://chezmarielle.com/images/autumn-affairs.jpg</image:loc></image:image>
+    <image:image><image:loc>https://chezmarielle.com/images/european-summer-edition.jpg</image:loc></image:image>
+    <image:image><image:loc>https://chezmarielle.com/images/marielle-folan.jpg</image:loc></image:image>
   </url>
 </urlset>
