@@ -93,6 +93,9 @@ a { color: inherit; }
 .mosaic { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
 .mosaic img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
 .mosaic .lead { grid-column: span 2; grid-row: span 2; height: 100%; aspect-ratio: auto; }
+.mosaic .wide { grid-column: span 2; height: 100%; aspect-ratio: auto; }
+.mosaic.pair img { grid-column: span 2; }
+.mosaic.trio { grid-template-columns: repeat(3, 1fr); }
 
 /* About */
 .about { background: var(--cream); padding: var(--section) 0; }
@@ -149,6 +152,10 @@ textarea { resize: vertical; }
   .nav { gap: 22px; }
   .mosaic { grid-template-columns: 1fr 1fr; gap: 8px; }
   .mosaic .lead { grid-row: auto; height: auto; aspect-ratio: 4 / 5; }
+  .mosaic .wide { height: auto; aspect-ratio: 8 / 5; }
+  .mosaic.pair img { grid-column: auto; }
+  .mosaic.trio { grid-template-columns: 1fr 1fr; }
+  .mosaic.trio img:first-child { grid-column: span 2; }
   .about-grid { grid-template-columns: 1fr; }
   .about-photo { max-width: 300px; }
   .inquiry { grid-template-columns: 1fr; }
