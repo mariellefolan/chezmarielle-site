@@ -55,6 +55,26 @@ a { color: inherit; }
 .nav { display: flex; gap: 28px; }
 .nav a { color: var(--cream); text-decoration: none; font-weight: 500; font-size: 16px; }
 .nav a:hover, .nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 6px; }
+
+/* Menu button: phone only */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  margin-right: -10px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.nav-toggle span { display: block; height: 2px; background: var(--cream); transition: transform 0.2s, opacity 0.2s; }
+.nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+.nav-toggle:focus-visible { outline: 2px solid #8A7652; outline-offset: 2px; }
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -148,8 +168,33 @@ textarea { resize: vertical; }
   .hero-grid { grid-template-columns: 1fr; gap: 32px; margin-top: 28px; }
   .hero-photo img { aspect-ratio: 4 / 5; }
   .help-list { grid-template-columns: 1fr; grid-auto-flow: row; grid-template-rows: none; }
-  .topbar { flex-wrap: wrap; row-gap: 14px; }
+  .topbar { position: relative; }
   .nav { gap: 22px; }
+  /* With the script running, the menu folds behind the button. Without it, the links stay visible. */
+  .js .nav-toggle { display: flex; position: relative; z-index: 21; }
+  /* The menu slides in from the right and covers three quarters of the screen. */
+  .js .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    width: 75vw;
+    flex-direction: column;
+    gap: 0;
+    padding: 96px 28px 32px;
+    background: var(--green);
+    box-shadow: -8px 0 24px rgba(0, 0, 0, 0.25);
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: transform 0.3s ease, visibility 0s linear 0.3s;
+  }
+  .js .nav.open { transform: none; visibility: visible; transition: transform 0.3s ease, visibility 0s; }
+  .js .nav a { font-family: var(--serif); font-size: 26px; font-weight: 400; padding: 16px 0; border-bottom: 1px solid rgba(245, 241, 232, 0.25); }
+  .js .nav a:first-child { border-top: 1px solid rgba(245, 241, 232, 0.25); }
+  /* The rest of the page dims behind the open menu; tapping it closes the menu. */
+  html.menu-open { overflow: hidden; }
+  html.menu-open body::after { content: ""; position: fixed; inset: 0; z-index: 19; background: rgba(0, 0, 0, 0.45); }
   .mosaic { grid-template-columns: 1fr 1fr; gap: 8px; }
   .mosaic .lead { grid-row: auto; height: auto; aspect-ratio: 4 / 5; }
   .mosaic .wide { height: auto; aspect-ratio: 8 / 5; }
@@ -160,4 +205,9 @@ textarea { resize: vertical; }
   .about-photo { max-width: 300px; }
   .inquiry { grid-template-columns: 1fr; }
   .field.half { grid-column: 1 / -1; }
+}
+
+/* No sliding for people who turn off motion */
+@media (prefers-reduced-motion: reduce) {
+  .nav, .nav-toggle span { transition: none !important; }
 }
