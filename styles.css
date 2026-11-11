@@ -53,7 +53,7 @@ a { color: inherit; }
 .logo img { width: 230px; }
 .topbar { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .nav { display: flex; gap: 28px; }
-.nav a { color: var(--cream); text-decoration: none; font-weight: 500; font-size: 16px; }
+.nav a { color: var(--cream); text-decoration: none; font-weight: 500; font-size: 16px; white-space: nowrap; }
 .nav a:hover, .nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 6px; }
 
 /* Menu button: phone only */
@@ -86,7 +86,6 @@ a { color: inherit; }
 .hero-line { margin-top: 20px; }
 .event-types { margin: 22px 0 32px; padding-left: 20px; }
 .event-types li { margin: 4px 0; }
-.event-types a { color: inherit; text-underline-offset: 4px; }
 .hero-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 40%; }
 
 /* What I do / Who it's for / What I can help with */
@@ -187,14 +186,8 @@ select {
   .split img { max-width: 420px; }
 }
 
-/* Phone */
-@media (max-width: 700px) {
-  .hero { padding-top: 24px; }
-  .logo img { width: 180px; }
-  .hero-grid { grid-template-columns: 1fr; gap: 32px; margin-top: 28px; }
-  .hero-photo img { aspect-ratio: 4 / 5; }
-  .help-list { grid-template-columns: 1fr; grid-auto-flow: row; grid-template-rows: none; }
-  .steps { grid-template-columns: 1fr; }
+/* Menu button: phones and tablets */
+@media (max-width: 960px) {
   .topbar { position: relative; }
   .nav { gap: 22px; }
   /* With the script running, the menu folds behind the button. Without it, the links stay visible. */
@@ -206,7 +199,7 @@ select {
     right: 0;
     bottom: 0;
     z-index: 20;
-    width: 75vw;
+    width: min(75vw, 420px);
     flex-direction: column;
     gap: 0;
     padding: 96px 28px 32px;
@@ -217,11 +210,21 @@ select {
     transition: transform 0.3s ease, visibility 0s linear 0.3s;
   }
   .js .nav.open { transform: none; visibility: visible; transition: transform 0.3s ease, visibility 0s; }
-  .js .nav a { font-family: var(--serif); font-size: 26px; font-weight: 400; padding: 16px 0; border-bottom: 1px solid rgba(245, 241, 232, 0.25); }
+  .js .nav a { font-family: var(--serif); font-size: 26px; font-weight: 400; line-height: 1.25; padding: 16px 0; border-bottom: 1px solid rgba(245, 241, 232, 0.25); white-space: normal; }
   .js .nav a:first-child { border-top: 1px solid rgba(245, 241, 232, 0.25); }
   /* The rest of the page dims behind the open menu; tapping it closes the menu. */
   html.menu-open { overflow: hidden; }
   html.menu-open body::after { content: ""; position: fixed; inset: 0; z-index: 19; background: rgba(0, 0, 0, 0.45); }
+}
+
+/* Phone */
+@media (max-width: 700px) {
+  .hero { padding-top: 24px; }
+  .logo img { width: 180px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 32px; margin-top: 28px; }
+  .hero-photo img { aspect-ratio: 4 / 5; }
+  .help-list { grid-template-columns: 1fr; grid-auto-flow: row; grid-template-rows: none; }
+  .steps { grid-template-columns: 1fr; }
   .mosaic { grid-template-columns: 1fr 1fr; gap: 8px; }
   .mosaic .lead { grid-row: auto; height: auto; aspect-ratio: 4 / 5; }
   .mosaic .wide { height: auto; aspect-ratio: 8 / 5; }
