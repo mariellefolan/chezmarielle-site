@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Ovo&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
 
   <script type="application/ld+json">
   {
@@ -175,7 +175,7 @@
     <div class="wrap contact-grid">
       <div class="contact-intro">
         <h2 id="plan-heading">Plan an event</h2>
-        <p>Planning something? Send the date, the number of guests, your budget and the kind of event, and I'll get back to you.</p>
+        <p>Planning something? Send the date, the number of guests, your budget, and the kind of event, and I'll get back to you.</p>
         <ul class="links">
           <li><a href="mailto:hello@chezmarielle.com">hello@chezmarielle.com</a></li>
           <li><a href="https://www.instagram.com/chez.marielle/" rel="me">Instagram @chez.marielle</a></li>
@@ -191,6 +191,19 @@
         <div class="field half"><label for="f-guests">Number of guests</label><input id="f-guests" name="number_of_guests" type="text" inputmode="numeric"></div>
         <div class="field half"><label for="f-budget">Budget</label><input id="f-budget" name="budget" type="text"></div>
         <div class="field half"><label for="f-type">Type of event</label><input id="f-type" name="type_of_event" type="text"></div>
+        <div class="field"><label for="f-heard">How did you hear about us?</label>
+          <select id="f-heard" name="how_did_you_hear" required>
+            <option value="">Choose one</option>
+            <option>Google</option>
+            <option>Instagram</option>
+            <option>Friend</option>
+            <option>An event</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field" id="field-referred" hidden><label for="f-referred">Who referred you?</label><input id="f-referred" name="referred_by" type="text" required disabled></div>
+        <div class="field" id="field-event" hidden><label for="f-event">Tell us more</label><input id="f-event" name="which_event" type="text" required disabled></div>
+        <div class="field" id="field-heard-other" hidden><label for="f-heard-other">Tell us more</label><input id="f-heard-other" name="heard_about_us_other" type="text" required disabled></div>
         <div class="field"><label for="f-message">Anything else (optional)</label><textarea id="f-message" name="message" rows="5"></textarea></div>
         <div class="field">
           <button class="button dark" type="submit">Send</button>
@@ -206,6 +219,6 @@
   <div class="wrap">Chez Marielle · New York, NY</div>
 </footer>
 
-<script src="main.js?v=2" defer></script>
+<script src="main.js?v=3" defer></script>
 </body>
 </html>

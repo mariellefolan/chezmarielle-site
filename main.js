@@ -33,6 +33,22 @@
   var status = form.querySelector('.form-status');
   var button = form.querySelector('button[type="submit"]');
 
+  // "How did you hear about us?": Friend, An event, and Other each open a required follow-up field.
+  var heard = document.getElementById('f-heard');
+  var followUps = {
+    'Friend': document.getElementById('field-referred'),
+    'An event': document.getElementById('field-event'),
+    'Other': document.getElementById('field-heard-other')
+  };
+  function showFollowUp() {
+    Object.keys(followUps).forEach(function (choice) {
+      var on = heard.value === choice;
+      followUps[choice].hidden = !on;
+      followUps[choice].querySelector('input').disabled = !on;
+    });
+  }
+  heard.addEventListener('change', showFollowUp);
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     if (!form.checkValidity()) {
@@ -59,6 +75,7 @@
       .then(function (res) {
         if (res && res.success) {
           form.reset();
+          showFollowUp();
           status.textContent = 'Thank you! Your inquiry has been sent.';
         } else {
           throw new Error('not sent');

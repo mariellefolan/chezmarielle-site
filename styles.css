@@ -46,7 +46,7 @@ a { color: inherit; }
   cursor: pointer;
 }
 .button.dark { background: var(--green); color: var(--white); }
-.button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid #8A7652; outline-offset: 2px; }
+.button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 2px solid #8A7652; outline-offset: 2px; }
 
 /* Hero */
 .hero { background: var(--green); color: var(--cream); padding: 36px 0 var(--section); }
@@ -134,9 +134,10 @@ a { color: inherit; }
 
 .inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 20px; }
 .field { grid-column: 1 / -1; display: flex; flex-direction: column; }
+.field[hidden] { display: none; }
 .field.half { grid-column: span 1; }
 label { font-size: 15px; color: var(--green); margin-bottom: 6px; }
-input, textarea {
+input, textarea, select {
   font: inherit;
   font-size: 16px;
   color: var(--ink);
@@ -147,6 +148,12 @@ input, textarea {
   width: 100%;
 }
 textarea { resize: vertical; }
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 40px;
+  background: var(--white) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23274234' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 14px center;
+}
 .honeypot { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 .field .button { align-self: flex-start; }
 .form-status { margin-top: 14px; min-height: 1.6em; }
