@@ -9,7 +9,7 @@
   </url>
   <url>
     <loc>https://chezmarielle.com/past-events/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <image:image><image:loc>https://chezmarielle.com/images/events/the-blind-table-1.jpg</image:loc></image:image>
     <image:image><image:loc>https://chezmarielle.com/images/events/the-blind-table-2.jpg</image:loc></image:image>
     <image:image><image:loc>https://chezmarielle.com/images/events/the-blind-table-3.jpg</image:loc></image:image>
@@ -42,5 +42,11 @@
     <lastmod>2026-11-11</lastmod>
     <image:image><image:loc>https://chezmarielle.com/images/private-dinners/grazing-spread.jpg</image:loc></image:image>
     <image:image><image:loc>https://chezmarielle.com/images/private-dinners/two-guests.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://chezmarielle.com/brand-events/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <image:image><image:loc>https://chezmarielle.com/images/brand-events/ehlers-bottles.jpg</image:loc></image:image>
+    <image:image><image:loc>https://chezmarielle.com/images/brand-events/wine-passport.jpg</image:loc></image:image>
   </url>
 </urlset>
