@@ -37,4 +37,10 @@
     <image:image><image:loc>https://chezmarielle.com/images/events/european-summer-edition-4.jpg</image:loc></image:image>
     <image:image><image:loc>https://chezmarielle.com/images/events/european-summer-edition-5.jpg</image:loc></image:image>
   </url>
+  <url>
+    <loc>https://chezmarielle.com/private-dinners/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <image:image><image:loc>https://chezmarielle.com/images/private-dinners/grazing-spread.jpg</image:loc></image:image>
+    <image:image><image:loc>https://chezmarielle.com/images/private-dinners/two-guests.jpg</image:loc></image:image>
+  </url>
 </urlset>
