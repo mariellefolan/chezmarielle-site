@@ -3,13 +3,14 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://chezmarielle.com/</loc>
-    <lastmod>2026-11-09</lastmod>
-    <image:image><image:loc>https://chezmarielle.com/images/hero-table.jpg</image:loc></image:image>
+    <lastmod>2026-11-19</lastmod>
+    <image:image><image:loc>https://chezmarielle.com/images/home/roses-hero-2000.jpg</image:loc></image:image>
     <image:image><image:loc>https://chezmarielle.com/images/marielle-folan.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://chezmarielle.com/past-events/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-19</lastmod>
+    <image:image><image:loc>https://chezmarielle.com/images/events/past-events-hero-2000.jpg</image:loc></image:image>
     <image:image><image:loc>https://chezmarielle.com/images/events/the-blind-table-1.jpg</image:loc></image:image>
     <image:image><image:loc>https://chezmarielle.com/images/events/the-blind-table-2.jpg</image:loc></image:image>
     <image:image><image:loc>https://chezmarielle.com/images/events/the-blind-table-3.jpg</image:loc></image:image>
@@ -39,14 +40,15 @@
   </url>
   <url>
     <loc>https://chezmarielle.com/private-dinners/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-19</lastmod>
+    <image:image><image:loc>https://chezmarielle.com/images/private-dinners/hero-table-2000.jpg</image:loc></image:image>
     <image:image><image:loc>https://chezmarielle.com/images/private-dinners/grazing-spread.jpg</image:loc></image:image>
     <image:image><image:loc>https://chezmarielle.com/images/private-dinners/two-guests.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://chezmarielle.com/brand-events/</loc>
-    <lastmod>2026-11-11</lastmod>
-    <image:image><image:loc>https://chezmarielle.com/images/brand-events/ehlers-bottles.jpg</image:loc></image:image>
+    <lastmod>2026-11-19</lastmod>
+    <image:image><image:loc>https://chezmarielle.com/images/brand-events/hero-pour-2000.jpg</image:loc></image:image>
     <image:image><image:loc>https://chezmarielle.com/images/brand-events/wine-passport.jpg</image:loc></image:image>
   </url>
 </urlset>

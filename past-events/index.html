@@ -27,25 +27,36 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Ovo&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=6">
+  <link href="https://fonts.googleapis.com/css2?family=Ovo&family=Tenor+Sans&display=swap" rel="stylesheet">
+  <link rel="preload" href="/fonts/careera-script.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" as="image" href="/images/events/past-events-hero-2000.jpg" imagesrcset="/images/events/past-events-hero-1400.jpg 1400w, /images/events/past-events-hero-2000.jpg 2000w" imagesizes="100vw" media="(min-width: 761px)">
+  <link rel="stylesheet" href="/styles.css?v=24">
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
-<header class="page-head">
-  <div class="wrap">
-    <div class="topbar">
-      <a class="logo" href="/"><img src="/images/chez-marielle-logo.png" alt="Chez Marielle Events &amp; Experiences" width="912" height="247"></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span><span></span><span></span></button>
-      <nav class="nav" id="site-nav" aria-label="Main">
+<header class="hero page">
+  <picture class="hero-photo">
+    <source media="(max-width: 760px)" srcset="/images/events/past-events-hero-phone.jpg">
+    <img src="/images/events/past-events-hero-2000.jpg" srcset="/images/events/past-events-hero-1400.jpg 1400w, /images/events/past-events-hero-2000.jpg 2000w" sizes="100vw" width="2000" height="869" fetchpriority="high"
+         alt="Guests at a candlelit table at Maxwell Social during Good Wine, Better Chemistry">
+  </picture>
+  <div class="bar">
+    <a class="logo" href="/" aria-label="Chez Marielle Events &amp; Experiences, home"><img src="/images/chez-marielle-logo.png" alt="Chez Marielle Events &amp; Experiences" width="912" height="247"></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <div class="nav-group nav-left">
         <a href="/">Home</a>
         <a href="/private-dinners/">Private dinners</a>
         <a href="/brand-events/">Brands &amp; businesses</a>
+      </div>
+      <div class="nav-group nav-right">
         <a href="/past-events/" aria-current="page">Past events</a>
         <a href="/#plan">Plan an event</a>
-      </nav>
-    </div>
+      </div>
+    </nav>
+  </div>
+  <div class="hero-text">
     <h1>Past events</h1>
     <p class="hero-line">Wine tastings, dinners, and parties I've planned in New York City.</p>
   </div>
@@ -53,122 +64,132 @@
 
 <main>
 
-  <section class="event" aria-labelledby="good-wine-better-chemistry">
-    <div class="wrap">
-      <div class="event-text">
-        <p class="loc"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>Maxwell Social</p>
-        <h2 id="good-wine-better-chemistry">Good Wine, Better Chemistry</h2>
-        <p class="details">February 2026 · 24 guests · With Ehlers Estate</p>
-        <p>A Galentine's tasting of six experimental wines from Ehlers Estate's R&amp;D label. Guests played a guided game to find their best match, with light bites and a DIY wine charm station, in the Garden Room at Maxwell Social.</p>
-      </div>
-      <div class="mosaic">
-        <img class="lead" src="/images/events/good-wine-better-chemistry-1.jpg" width="1000" height="1250" alt="A long dinner table with red roses, pink taper candles, glasses of red and rosé, and a wine passport, with guests seated along it">
+
+  <section class="event wrap" aria-labelledby="good-wine-better-chemistry">
+    <div class="event-text">
+      <p class="kicker">Maxwell Social</p>
+      <h2 id="good-wine-better-chemistry">Good Wine, Better Chemistry</h2>
+      <p class="details">February 2026 · 24 guests · With Ehlers Estate</p>
+      <p>A Galentine's tasting of six experimental wines from Ehlers Estate's R&amp;D label. Guests played a guided game to find their best match, with light bites and a DIY wine charm station, in the Garden Room at Maxwell Social.</p>
+    </div>
+    <div class="mosaic">
+        <img class="lead" src="/images/events/good-wine-better-chemistry-1.jpg" loading="lazy" width="1000" height="1250" alt="A long dinner table with red roses, pink taper candles, glasses of red and rosé, and a wine passport, with guests seated along it">
         <img src="/images/events/good-wine-better-chemistry-2.jpg" width="600" height="750" loading="lazy" alt="Three guests smiling with glasses of white wine beside the dinner table">
         <img src="/images/events/good-wine-better-chemistry-3.jpg" width="600" height="750" loading="lazy" alt="Guests laughing together with glasses of white wine, one in a heart-print sweater">
         <img src="/images/events/good-wine-better-chemistry-4.jpg" width="600" height="750" loading="lazy" alt="A guest laughing as she makes a charm at the DIY wine charm station">
         <img src="/images/events/good-wine-better-chemistry-5.jpg?v=2" width="600" height="750" loading="lazy" alt="A wine passport on a marble table beside a glass of rosé and a small bouquet">
-      </div>
     </div>
   </section>
 
-  <section class="event" aria-labelledby="the-blind-table">
-    <div class="wrap">
-      <div class="event-text">
-        <p class="loc"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>Midtown, Manhattan</p>
-        <h2 id="the-blind-table">The Blind Table</h2>
-        <p class="details">September 2026 · 21 guests · With Ehlers Estate</p>
-        <p>A blind tasting played like The Traitors: at each table, one guest knew every wine and steered the rest toward the wrong answers. Five Ehlers Estate wines and light bites, in a Midtown studio.</p>
-      </div>
-      <div class="mosaic">
+  <div class="divider wrap" aria-hidden="true"><span></span></div>
+
+  <section class="event wrap" aria-labelledby="the-blind-table">
+    <div class="event-text">
+      <p class="kicker">Midtown, Manhattan</p>
+      <h2 id="the-blind-table">The Blind Table</h2>
+      <p class="details">September 2026 · 21 guests · With Ehlers Estate</p>
+      <p>A blind tasting played like The Traitors: at each table, one guest knew every wine and steered the rest toward the wrong answers. Five Ehlers Estate wines and light bites, in a Midtown studio.</p>
+    </div>
+    <div class="mosaic">
         <img class="lead" src="/images/events/the-blind-table-1.jpg" width="1000" height="1250" loading="lazy" alt="Marielle Folan holding up two wine bottles in red velvet bags at The Blind Table">
         <img src="/images/events/the-blind-table-2.jpg" width="600" height="750" loading="lazy" alt="A guest reading a printed tasting menu at a candlelit table with dark red flowers">
         <img src="/images/events/the-blind-table-3.jpg" width="600" height="750" loading="lazy" alt="Two guests in long dresses at the grazing table">
         <img src="/images/events/the-blind-table-4.jpg" width="600" height="750" loading="lazy" alt="A guest laughing at a table set with red and white flowers and pillar candles">
         <img src="/images/events/the-blind-table-5.jpg" width="600" height="750" loading="lazy" alt="A guest holding two tasting cups of white wine">
-      </div>
     </div>
   </section>
 
-  <section class="event" aria-labelledby="feast-of-saint-elsa">
-    <div class="wrap">
-      <div class="event-text">
-        <p class="loc"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>Maxwell Social</p>
-        <h2 id="feast-of-saint-elsa">Feast of Saint Elsa</h2>
-        <p class="details">January 2026 · 150 guests</p>
-        <p>Maxwell Social is named after Elsa Maxwell, the society hostess famous for over-the-top parties and costume balls, so for the club's twice-yearly members-only feast, we threw one in her honor. I planned the night and spent the day setting it up: I arranged all of the flowers and built the grazing spread and the champagne tower with help from the bar staff. Dinner's centerpiece was a whole roasted pig, served alongside a menu I coordinated with the club's in-house chef.</p>
-      </div>
-      <div class="mosaic">
+  <div class="divider wrap" aria-hidden="true"><span></span></div>
+
+  <section class="event wrap" aria-labelledby="feast-of-saint-elsa">
+    <div class="event-text">
+      <p class="kicker">Maxwell Social</p>
+      <h2 id="feast-of-saint-elsa">Feast of Saint Elsa</h2>
+      <p class="details">January 2026 · 150 guests</p>
+      <p>Maxwell Social is named after Elsa Maxwell, the society hostess famous for over-the-top parties and costume balls, so for the club's twice-yearly members-only feast, we threw one in her honor. I planned the night and spent the day setting it up: I arranged all of the flowers and built the grazing spread and the champagne tower with help from the bar staff. Dinner's centerpiece was a whole roasted pig, served alongside a menu I coordinated with the club's in-house chef.</p>
+    </div>
+    <div class="mosaic">
         <img class="lead" src="/images/events/feast-of-saint-elsa-1.jpg" width="1000" height="1250" loading="lazy" alt="A champagne tower of coupe glasses on a draped round table, in front of floor-to-ceiling bookshelves">
         <img src="/images/events/feast-of-saint-elsa-2.jpg" width="600" height="750" loading="lazy" alt="A grazing spread of cheeses, crackers, olives, and berries beneath arrangements of baby's breath and white roses">
         <img src="/images/events/feast-of-saint-elsa-3.jpg" width="600" height="750" loading="lazy" alt="The grazing table with flower arrangements, cheeses, and stacked plates">
         <img class="wide" src="/images/events/feast-of-saint-elsa-4.jpg" width="1200" height="750" loading="lazy" alt="A whole roasted pig on a bed of greens, the centerpiece of the Feast of Saint Elsa dinner">
-      </div>
     </div>
   </section>
 
-  <section class="event" aria-labelledby="christmas-party">
-    <div class="wrap">
-      <div class="event-text">
-        <p class="loc"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>Maxwell Social</p>
-        <h2 id="christmas-party">Christmas Party</h2>
-        <p class="details">December 2025 · 250 guests</p>
-        <p>For Maxwell's black-tie-optional Christmas party, I wanted to put together something special for the members. Alongside a live band and a visit from Santa, I worked with a bakery on a cookie-decorating station, so guests in gowns and tuxedos had a fun, hands-on moment with piping bags and sprinkles.</p>
-      </div>
-      <div class="mosaic trio">
+  <div class="divider wrap" aria-hidden="true"><span></span></div>
+
+  <section class="event wrap" aria-labelledby="christmas-party">
+    <div class="event-text">
+      <p class="kicker">Maxwell Social</p>
+      <h2 id="christmas-party">Christmas Party</h2>
+      <p class="details">December 2025 · 250 guests</p>
+      <p>For Maxwell's black-tie-optional Christmas party, I wanted to put together something special for the members. Alongside a live band and a visit from Santa, I worked with a bakery on a cookie-decorating station, so guests in gowns and tuxedos had a fun, hands-on moment with piping bags and sprinkles.</p>
+    </div>
+    <div class="mosaic trio">
         <img src="/images/events/christmas-party-1.jpg" width="1000" height="1250" loading="lazy" alt="Guests in black tie at the Maxwell Social Christmas party, seen from above">
         <img src="/images/events/christmas-party-3.jpg" width="800" height="1000" loading="lazy" alt="Santa on a couch with two guests in tuxedos, in front of the Christmas tree">
         <img src="/images/events/christmas-party-2.jpg" width="1000" height="1250" loading="lazy" alt="Guests in gowns and tuxedos at the cookie-decorating station">
-      </div>
     </div>
   </section>
 
-  <section class="event" aria-labelledby="autumn-affairs">
-    <div class="wrap">
-      <div class="event-text">
-        <p class="loc"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>Dacia Gallery</p>
-        <h2 id="autumn-affairs">Autumn Affairs</h2>
-        <p class="details">November 2025 · about 30 guests · With Juliet Wine</p>
-        <p>An autumn wine tasting with Juliet Wine at an art gallery. We styled the gallery for fall, and Juliet's founder poured her wines and explained them.</p>
-      </div>
-      <div class="mosaic">
+  <div class="divider wrap" aria-hidden="true"><span></span></div>
+
+  <section class="event wrap" aria-labelledby="autumn-affairs">
+    <div class="event-text">
+      <p class="kicker">Dacia Gallery</p>
+      <h2 id="autumn-affairs">Autumn Affairs</h2>
+      <p class="details">November 2025 · about 30 guests · With Juliet Wine</p>
+      <p>An autumn wine tasting with Juliet Wine at an art gallery. We styled the gallery for fall, and Juliet's founder poured her wines and explained them.</p>
+    </div>
+    <div class="mosaic even">
         <img src="/images/events/autumn-affairs-1.jpg" width="600" height="750" loading="lazy" alt="Juliet Wine Cabernet Sauvignon and Pinot Noir on a checkered tablecloth with fall leaves, a candle, and a small pumpkin">
         <img src="/images/events/autumn-affairs-2.jpg" width="600" height="750" loading="lazy" alt="Three guests holding glasses of wine in the gallery">
         <img src="/images/events/autumn-affairs-3.jpg" width="600" height="750" loading="lazy" alt="Three guests posing in front of a colorful artwork">
         <img src="/images/events/autumn-affairs-4.jpg" width="600" height="750" loading="lazy" alt="Four guests holding glasses of wine under pink and purple light">
-      </div>
     </div>
   </section>
 
-  <section class="event" aria-labelledby="european-summer-edition">
-    <div class="wrap">
-      <div class="event-text">
-        <p class="loc"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>Style Shutter Studios</p>
-        <h2 id="european-summer-edition">Celebrating Ladies in Wine: European Summer Edition</h2>
-        <p class="details">March 2025 · about 30 guests · With Offline Wine (formerly Vinat)</p>
-        <p>A European summer wine tasting with Offline Wine: a greenery runner with lemons and mini disco balls, gold taper candles, and illustrated menus.</p>
-      </div>
-      <div class="mosaic">
+  <div class="divider wrap" aria-hidden="true"><span></span></div>
+
+  <section class="event wrap" aria-labelledby="european-summer-edition">
+    <div class="event-text">
+      <p class="kicker">Style Shutter Studios</p>
+      <h2 id="european-summer-edition">Celebrating Ladies in Wine: European Summer Edition</h2>
+      <p class="details">March 2025 · about 30 guests · With Offline Wine (formerly Vinat)</p>
+      <p>A European summer wine tasting with Offline Wine: a greenery runner with lemons and mini disco balls, gold taper candles, and illustrated menus.</p>
+    </div>
+    <div class="mosaic">
         <img class="lead" src="/images/events/european-summer-edition-1.jpg" width="1000" height="1250" loading="lazy" alt="Three wine bottles laid on the table among lemons, greenery, mini disco balls, and illustrated menus">
         <img src="/images/events/european-summer-edition-2.jpg" width="600" height="750" loading="lazy" alt="A greenery runner with lemons, white flowers, and taper candles beside illustrated menus">
         <img src="/images/events/european-summer-edition-3.jpg" width="600" height="750" loading="lazy" alt="Wine bottles, lemons, white flowers, and taper candles on the table, with an illustrated menu in front">
         <img src="/images/events/european-summer-edition-4.jpg" width="600" height="750" loading="lazy" alt="Guests clinking glasses of red wine over the table">
         <img src="/images/events/european-summer-edition-5.jpg" width="600" height="750" loading="lazy" alt="A spread of cheeses, charcuterie, fruit, and vegetables next to wine bottles">
-      </div>
     </div>
   </section>
 
-  <section class="contact" aria-labelledby="plan-heading">
-    <div class="wrap">
-      <h2 id="plan-heading">Plan an event</h2>
-      <p class="contact-line">Planning something? Send the date, the number of guests, your budget and the kind of event, and I'll get back to you.</p>
-      <a class="button dark" href="/#plan">Plan an event</a>
-    </div>
+
+  <div class="divider wrap" aria-hidden="true"><span></span></div>
+
+  <section class="page-cta wrap" aria-labelledby="plan-heading">
+    <h2 id="plan-heading" class="script">Plan an event</h2>
+    <p>Planning something? Send the date, the number of guests, your budget and the kind of event, and I'll get back to you.</p>
+    <a class="button dark" href="/#plan">Plan an event</a>
   </section>
 
 </main>
 
 <footer class="footer">
-  <div class="wrap">Chez Marielle · New York, NY · <a href="/privacy/">Privacy</a></div>
+  <div class="wrap footer-inner">
+    <a class="footer-logo" href="/" aria-label="Chez Marielle Events &amp; Experiences, home"><span class="logo-mask"></span></a>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="/private-dinners/">Private dinners</a>
+      <a href="/brand-events/">Brands &amp; businesses</a>
+      <a href="/past-events/">Past events</a>
+      <a href="/#plan">Plan an event</a>
+      <a href="https://www.instagram.com/chez.marielle/" rel="me">Instagram</a>
+    </nav>
+    <p class="footer-small">Chez Marielle · New York, NY · <a href="/privacy/">Privacy</a></p>
+  </div>
 </footer>
 
 <script src="/main.js?v=3" defer></script>

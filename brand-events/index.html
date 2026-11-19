@@ -10,8 +10,8 @@
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Brand dinners and experiential marketing in NYC | Chez Marielle</title>
-  <meta name="description" content="Brand dinners and event production in New York City, planned and styled from start to finish, plus contract support for in-house and agency experiential marketing teams.">
+  <title>Brand events, client dinners, and experiential marketing in NYC | Chez Marielle</title>
+  <meta name="description" content="Brand events and client dinners in NYC, with as little or as much planning and styling as you need, plus contract support for experiential marketing teams.">
   <link rel="canonical" href="https://chezmarielle.com/brand-events/">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
@@ -20,24 +20,26 @@
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://chezmarielle.com/brand-events/">
-  <meta property="og:title" content="Brand dinners and experiential marketing in NYC | Chez Marielle">
-  <meta property="og:description" content="Brand dinners and event production in New York City, planned and styled from start to finish, plus contract support for in-house and agency experiential marketing teams.">
+  <meta property="og:title" content="Brand events, client dinners, and experiential marketing in NYC | Chez Marielle">
+  <meta property="og:description" content="Brand events and client dinners in NYC, with as little or as much planning and styling as you need, plus contract support for experiential marketing teams.">
   <meta property="og:image" content="https://chezmarielle.com/images/brand-events/ehlers-bottles.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Ovo&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=6">
+  <link href="https://fonts.googleapis.com/css2?family=Ovo&family=Tenor+Sans&display=swap" rel="stylesheet">
+  <link rel="preload" href="/fonts/careera-script.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" as="image" href="/images/brand-events/hero-pour-2000.jpg" imagesrcset="/images/brand-events/hero-pour-1400.jpg 1400w, /images/brand-events/hero-pour-2000.jpg 2000w" imagesizes="100vw" media="(min-width: 761px)">
+  <link rel="stylesheet" href="/styles.css?v=24">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Brand dinners and experiential marketing support",
-    "serviceType": "Brand dinner planning and experiential marketing support",
+    "name": "Brand events, client dinners, and experiential marketing support",
+    "serviceType": "Brand event and client dinner planning, and experiential marketing support",
     "url": "https://chezmarielle.com/brand-events/",
-    "description": "Brand dinners and event production in New York City, planned and styled from start to finish, plus contract support for in-house and agency experiential marketing teams.",
+    "description": "Brand events and client dinners in NYC, with as little or as much planning and styling as you need, plus contract support for experiential marketing teams.",
     "provider": { "@id": "https://chezmarielle.com/#business" },
     "areaServed": { "@type": "City", "name": "New York City" }
   }
@@ -47,8 +49,8 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "Do we need a venue?", "acceptedAnswer": { "@type": "Answer", "text": "No. I can plan the dinner at your office, at a venue you already have, or find one for you." } },
-      { "@type": "Question", "name": "Do you work with in-house teams?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, on a contract or one-off basis, by the day or by the hour." } },
+      { "@type": "Question", "name": "Do we need a venue?", "acceptedAnswer": { "@type": "Answer", "text": "Nope! I can plan the dinner at your office, at a venue you already have, or find one for you." } },
+      { "@type": "Question", "name": "Do you work with in-house teams?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. I can join your team on a contract or one-off basis, by the day or by the hour." } },
       { "@type": "Question", "name": "What does it cost?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on how many guests you're having and how much you want me to take on. Once I know what you have in mind from our 15-minute call, I'll send you a quote." } }
     ]
   }
@@ -57,121 +59,126 @@
 </head>
 <body>
 
-<header class="hero">
-  <div class="wrap">
-    <div class="topbar">
-      <a class="logo" href="/"><img src="/images/chez-marielle-logo.png" alt="Chez Marielle Events &amp; Experiences" width="912" height="247"></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span><span></span><span></span></button>
-      <nav class="nav" id="site-nav" aria-label="Main">
+<header class="hero page">
+  <picture class="hero-photo">
+    <source media="(max-width: 760px)" srcset="/images/brand-events/hero-pour-phone.jpg">
+    <img src="/images/brand-events/hero-pour-2000.jpg" srcset="/images/brand-events/hero-pour-1400.jpg 1400w, /images/brand-events/hero-pour-2000.jpg 2000w" sizes="100vw" width="2000" height="869" fetchpriority="high"
+         alt="Red wine being poured into a glass beneath a striped lamp at Good Wine, Better Chemistry">
+  </picture>
+  <div class="bar">
+    <a class="logo" href="/" aria-label="Chez Marielle Events &amp; Experiences, home"><img src="/images/chez-marielle-logo.png" alt="Chez Marielle Events &amp; Experiences" width="912" height="247"></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <div class="nav-group nav-left">
         <a href="/">Home</a>
         <a href="/private-dinners/">Private dinners</a>
         <a href="/brand-events/" aria-current="page">Brands &amp; businesses</a>
+      </div>
+      <div class="nav-group nav-right">
         <a href="/past-events/">Past events</a>
         <a href="/#plan">Plan an event</a>
-      </nav>
-    </div>
-
-    <div class="hero-grid">
-      <div class="hero-text">
-        <h1>Brand dinners and experiential marketing in NYC</h1>
-        <p class="hero-line">Brand and client dinners planned and styled from start to finish, with a mood board and a mock-up of the table before the day. Plus extra support for in-house experiential marketing teams.</p>
-        <p class="hero-cta"><a class="button" href="/#plan">Plan a brand dinner</a></p>
       </div>
-      <figure class="hero-photo">
-        <img src="/images/brand-events/ehlers-bottles.jpg" width="1200" height="1500" fetchpriority="high"
-             alt="Four Ehlers Estate bottles, white to rosé, lined up on a marble table at Good Wine, Better Chemistry">
-      </figure>
-    </div>
+    </nav>
+  </div>
+  <div class="hero-text">
+    <h1>Brand events, client dinners, &amp; experiential marketing in NYC</h1>
+    <p class="hero-line">Brand events and client dinners, with as little or as much planning and styling as you need, plus extra support for in-house and agency experiential marketing teams.</p>
+    <a class="button ghost" href="/#plan">Plan an event</a>
   </div>
 </header>
 
 <main>
-  <section class="services">
-    <div class="wrap">
-      <h2>Who it's for</h2>
-      <ul class="tags">
-        <li>Brands and businesses</li>
-        <li>In-house experiential marketing teams</li>
-        <li>Agencies</li>
-        <li>Client dinners</li>
-        <li>Influencer dinners and press dinners</li>
-      </ul>
 
-      <div class="block split">
-        <div>
-          <h2>Brand dinners: what every dinner includes</h2>
-          <ul class="help-list">
-            <li>Concept and format</li>
-            <li>A mood board and tablescape mock-up</li>
-            <li>Venue search, if you need one</li>
-            <li>Vendors and partners</li>
-            <li>Budget</li>
-            <li>Day-of setup</li>
-          </ul>
-          <div class="block">
-            <h2>Add-ons</h2>
-            <ul class="help-list">
-              <li>Florals</li>
-              <li>Printed menus and other printed pieces</li>
-              <li>Spotify playlist design</li>
-            </ul>
-          </div>
-        </div>
-        <img src="/images/brand-events/wine-passport.jpg" width="1200" height="1500" loading="lazy"
-             alt="A printed wine passport on a marble table beside a glass of rosé and a small bouquet, at Good Wine, Better Chemistry">
-      </div>
+  <section class="who-band wrap" aria-labelledby="who-its-for">
+    <h2 id="who-its-for" class="label-script">Who it<span class="ap">'</span>s for</h2>
+    <ul class="who-inline"><li>Brands and businesses</li><li>In-house experiential marketing teams</li><li>Agencies</li><li>Client dinners</li><li>Influencer dinners and press dinners</li></ul>
+  </section>
 
-      <div class="block">
-        <h2>Support for in-house and agency teams</h2>
-        <p class="lead-text">Extra support for experiential marketing teams, on a contract or one-off basis, when you need help here and there but not a whole new employee. Booked by the day or by the hour.</p>
-      </div>
+  <div class="divider wrap" aria-hidden="true"><span></span></div>
 
-      <div class="block">
-        <h2>Experience</h2>
-        <p class="lead-text">I was Head of Membership at Maxwell Social, a private members' club in New York City, where I planned and produced member events, including a 150-guest members' feast and a 250-guest Christmas party. Brand partners on my past events include Ehlers Estate, Juliet Wine, and Offline Wine (formerly Vinat). <a href="/past-events/">See past events</a></p>
-      </div>
-
-      <div class="block">
-        <h2>How it works</h2>
-        <ol class="steps">
-          <li>A free 15-minute call about the date, the number of guests, your budget, and what the dinner is for.</li>
-          <li>A quote and a written contract.</li>
-          <li>I make the mood board and the tablescape mock-up, and I make sure you're excited about all the details and that everything looks good.</li>
-          <li>On the day, I set everything up.</li>
-        </ol>
-      </div>
-
-      <div class="block">
-        <h2>Questions</h2>
-        <div class="cols three">
-          <article>
-            <h3>Do we need a venue?</h3>
-            <p>No. I can plan the dinner at your office, at a venue you already have, or find one for you.</p>
-          </article>
-          <article>
-            <h3>Do you work with in-house teams?</h3>
-            <p>Yes, on a contract or one-off basis, by the day or by the hour.</p>
-          </article>
-          <article>
-            <h3>What does it cost?</h3>
-            <p>It depends on how many guests you're having and how much you want me to take on. Once I know what you have in mind from our 15-minute call, I'll send you a quote.</p>
-          </article>
-        </div>
-      </div>
+  <section class="split fit-photo wrap" aria-labelledby="includes">
+    <div class="split-text">
+      <h2 id="includes" class="script">How I Can Help</h2>
+      <p class="split-sub">I can do bundled pricing or à la carte, depending on your needs and how much you want me to take on.</p>
+      <ul class="help-list">
+          <li>Concept and format</li>
+          <li>Mood boards and <span class="nw">mock-ups</span></li>
+          <li>Venue search, if you need one</li>
+          <li>Vendors and partners</li>
+          <li>Budget</li>
+          <li>Day-of setup</li>
+          <li>Florals</li>
+          <li>Printed menus and other printed pieces</li>
+          <li>Spotify playlist design</li>
+        </ul>
+    </div>
+    <div class="split-photos">
+      <img src="/images/brand-events/wine-passport.jpg" width="1200" height="1500" loading="lazy"
+           alt="A printed wine passport on a marble table beside a glass of rosé and a small bouquet, at Good Wine, Better Chemistry">
     </div>
   </section>
 
-  <section class="cta" aria-labelledby="cta-heading">
-    <div class="wrap">
-      <h2 id="cta-heading">Planning a brand dinner?</h2>
-      <p>Send the date, the number of guests, your budget, and what it's for, and I'll get back to you.</p>
-      <a class="button dark" href="/#plan">Plan a brand dinner</a>
+  <div class="divider wrap" aria-hidden="true"><span></span></div>
+
+  <section class="block wrap" aria-labelledby="how-it-works">
+    <h2 id="how-it-works" class="script">How it works</h2>
+    <ol class="steps">
+      <li>A free 15-minute call about the date, the number of guests, your budget, and what it's for.</li>
+      <li>I send you a proposal built around what you'd like me to take on.</li>
+      <li>I make the mood boards and <span class="nw">mock-ups</span>, and I make sure you're excited about all the details and that everything looks good.</li>
+      <li>On the day, I take care of everything you've handed me, so your team can focus on your guests.</li>
+    </ol>
+  </section>
+
+  <div class="divider wrap" aria-hidden="true"><span></span></div>
+
+  <section class="block wrap" aria-labelledby="team-support">
+    <h2 id="team-support" class="script">Support for in-house and agency teams</h2>
+    <p class="block-lead">Extra support for experiential marketing teams, on a contract or one-off basis, when you need help here and there but not a whole new employee. Booked by the day or by the hour.</p>
+  </section>
+
+  <div class="divider wrap" aria-hidden="true"><span></span></div>
+
+  <section class="block wrap" aria-labelledby="questions">
+    <h2 id="questions" class="script">Questions</h2>
+    <div class="faq">
+      <article>
+        <h3>Do we need a venue?</h3>
+        <p>Nope! I can plan the dinner at your office, at a venue you already have, or find one for you.</p>
+      </article>
+      <article>
+        <h3>Do you work with in-house teams?</h3>
+        <p>Yes. I can join your team on a contract or one-off basis, by the day or by the hour.</p>
+      </article>
+      <article>
+        <h3>What does it cost?</h3>
+        <p>It depends on how many guests you're having and how much you want me to take on. Once I know what you have in mind from our 15-minute call, I'll send you a quote.</p>
+      </article>
     </div>
   </section>
+
+  <div class="divider wrap" aria-hidden="true"><span></span></div>
+
+  <section class="page-cta wrap" aria-labelledby="cta-heading">
+    <h2 id="cta-heading" class="script">Planning something?</h2>
+    <p>Send the date, the number of guests, your budget, and what it's for, and I'll get back to you.</p>
+    <a class="button dark" href="/#plan">Plan an event</a>
+  </section>
+
 </main>
 
 <footer class="footer">
-  <div class="wrap">Chez Marielle · New York, NY · <a href="/privacy/">Privacy</a></div>
+  <div class="wrap footer-inner">
+    <a class="footer-logo" href="/" aria-label="Chez Marielle Events &amp; Experiences, home"><span class="logo-mask"></span></a>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="/private-dinners/">Private dinners</a>
+      <a href="/brand-events/">Brands &amp; businesses</a>
+      <a href="/past-events/">Past events</a>
+      <a href="/#plan">Plan an event</a>
+      <a href="https://www.instagram.com/chez.marielle/" rel="me">Instagram</a>
+    </nav>
+    <p class="footer-small">Chez Marielle · New York, NY · <a href="/privacy/">Privacy</a></p>
+  </div>
 </footer>
 
 <script src="/main.js?v=3" defer></script>
