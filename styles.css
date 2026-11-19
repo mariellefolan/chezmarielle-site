@@ -519,6 +519,8 @@ select {
   /* The rest of the page dims behind the open menu; tapping it closes the menu. */
   html.menu-open { overflow: hidden; }
   html.menu-open body::after { content: ""; position: fixed; inset: 0; z-index: 19; background: rgba(0, 0, 0, 0.45); }
+  /* The menu sits inside the top bar, so the bar has to rise above the dimmed page too, or taps land on the dimming instead of the links */
+  html.menu-open .bar { z-index: 20; }
 }
 
 /* Phone */
